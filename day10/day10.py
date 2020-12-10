@@ -10,7 +10,7 @@ n = len(a)
 c = Counter(np.diff(a))
 print(c[1] * c[3])
 
-# memo[i] is number of ways to reach a[i]
+# memo[i] is number of ways to reach the end from a[i]
 memo = defaultdict(int)
 memo[n - 1] = 1
 for i in range(n - 2, -1, -1):
